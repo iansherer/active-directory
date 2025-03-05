@@ -120,19 +120,27 @@ Verified that non-administrative users could log in.
 
 <h3>Create Additional Users and Attempt Login</h3>
 
-Log into DC-1 as jane_admin.
+Logged into DC-1 as jane_admin.
 
-Open PowerShell ISE as an administrator.
+Opened PowerShell ISE as an administrator.
 
-Create a new script file and paste the contents of this script (https://github.com/iansherer/configure-useradd-AD/blob/main/createusers.ps1)
+Created a new script file and pasted the contents of this script (https://github.com/iansherer/configure-useradd-AD/blob/main/createusers.ps1)
+<p>
+  <img src="https://i.imgur.com/0i8uApf.png" height="75%" width="100%" alt="create users script"/>
+</p>
 
-Run the script and observe the user accounts being created.
+Ran the script and observed the user accounts being created.
+<p>
+  <img src="https://imgur.com/1mz77Ye.png" height="75%" width="100%" alt="create users script"/>
+</p>
 
-Open ADUC to verify the newly created accounts.
+Opened ADUC to verify the newly created accounts and attempted to login to one of them.
+<p>
+  <img src="https://imgur.com/mXLZA1j.png" height="75%" width="100%" alt="create users script"/>
+  <img src="https://imgur.com/cLKr2oX.png" height="75%" width="100%" alt="create users script"/>
+  <img src="https://imgur.com/PS5fR8R.png" height="75%" width="100%" alt="create users script"/>
+</p>
 
-Attempt to log into Client-1 using one of the newly created user accounts.
+Conclusion 
 
-
-
-
-
+This project provided insights into setting up and configuring an on-premises Active Directory within Azure Virtual Machines. I successfully created a domain, configured users, and ensured secure access via Remote Desktop. These skills are essential for managing enterprise-level IT environments and maintaining secure network infrastructures
